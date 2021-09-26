@@ -1,0 +1,25 @@
+<h1> {{titulo}} </h1>
+<h2> Ejercicio 1 </h2>
+<!–– eventos en un boton con parentesis ––> 
+<button (click)= " numero = numero+1">+1</button> 
+<span> {{numero}} </span>
+<button  (click)= " numero = numero-1">-1</button>
+
+<h2> Ejercicio 2 </h2>
+<button (click)= "sumar()">+1</button> 
+<span> {{numero}} </span>
+<button  (click)= "restar()">-1</button>
+
+<h2> Ejercicio 3 </h2>
+<button (click)= "acumular(+1)">+1</button> 
+
+<button  (click)= "acumular(-1)">-1</button>
+
+<h3> Tarea </h3>
+<h3> La base es: <strong>{{base}}</strong> </h3>
+<button (click)= "acumular(base)">+{{base}}</button> 
+<span> {{numero}} </span>
+<button  (click)= "acumular(-base)">-{{base}}</button>
+
+<app-contador> </app-contador>  
+<app-heroe></app-heroe>  
