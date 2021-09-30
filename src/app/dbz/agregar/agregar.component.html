@@ -1,0 +1,25 @@
+<h3>Agregar</h3>
+        <hr>
+        <!-- puede recibir un event esto sigifica que nos interesa recibir todo el evento que se esta disparando-->
+        <!-- ng submit eto se importa de formModule-->
+        <!-- [value]= "nuevo.nombre"
+                 (input) =" cambiarNombre( $event)"-->
+        <form (ngSubmit) = "agregar( )">
+            <!--  llaves [] para establecer alguna propiedad [value]= nuevo.nombre asi se utiliza un objeto que tiene una propiedas -->
+            <input 
+                 type= "text" 
+                 placeholder = "Nombre"
+                 name="nombre"
+                 [(ngModel)]="nuevo.nombre"   
+            />
+                
+
+            <input 
+                 type= "number" 
+                 placeholder = "Poder"
+                 name="poder"
+                 [(ngModel)]="nuevo.poder"
+            />
+
+            <Button type="submit">Agregar</Button>
+        </form>

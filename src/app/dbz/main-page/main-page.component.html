@@ -1,0 +1,26 @@
+<h1>Dragon Ball z</h1>
+<hr>
+
+<div class="row">
+        
+    
+    <div class="col">
+        <!-- Comunicacion padre a hijo  este caso es el padre le da a su hijo personaje la data  -->
+        <!-- <app-personajes [personajes]="personajes"> </app-personajes> Comunicacion padre a hijo  este caso es el padre le da a su hijo personaje la data  -->
+        <app-personajes></app-personajes>
+        
+    
+    </div>  
+         
+    <div class="col">
+        <!-- <app-agregar 
+        [nuevo]="nuevo"
+        (onNuevoPersonaje)="agregarNuevoPersonaje($event)"
+        >  </app-agregar> -->
+        
+        <app-agregar [nuevo]="nuevo" ></app-agregar>
+
+    </div>
+
+</div>
+
